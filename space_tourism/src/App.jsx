@@ -1,5 +1,7 @@
 import './App.css'
 
-function App() {}
+function App() {
+    return <div>start</div>
+}
 
 export default App
