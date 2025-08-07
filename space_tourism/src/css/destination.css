@@ -1,0 +1,110 @@
+.destination-page {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 991px) {
+    .destination-page {
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+}
+
+@media (max-width: 767px) {
+    .destination-page {
+        background-image: url("../assets/destination/background-destination-mobile.jpg");
+    }
+}
+
+.destination-wrapper {
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-bottom: 118px;
+    padding-top: 76px;
+    color: #ffffff;
+    position: relative;
+}
+
+.destination-wrapper div:first-child span:first-child {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #FFFFFF;
+    opacity: 25%;
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 28px;
+    letter-spacing: 4.72px;
+}
+
+.destination-wrapper div:first-child span:nth-child(2) {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #FFFFFF;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4.72px;
+}
+
+.destination-wrapper ul {
+    list-style: none;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+    margin-right: 160px;
+    text-align: right;
+}
+
+.destination-wrapper li {
+    display: inline;
+    margin-left: 35px;
+}
+
+.destination-wrapper ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Barlow Condensed", sans-serif;
+    color: #D0D6F9;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+.selected-destination {
+    display: flex;
+    justify-content: end;
+    gap:11%;
+}
+
+.selected-destination div:first-child {
+    max-width: 445px;
+    display: flex;
+}
+
+.selected-destination div:first-child img {
+    max-width: 100%;
+}
+
+.selected-destination div:nth-child(2) {
+    max-width: 445px;
+}
+
+.selected-destination div:nth-child(2) h1 {
+    font-family: "Bellefair", serif; 
+    font-size: 100px;
+    margin-bottom: 14px;
+    margin-top: 37px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 111px;
+}
+
+.selected-destination div:nth-child(2) p {
+    font-family: "Bellefair", serif; 
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Barlow", sans-serif;
+    color: #D0D6F9;
+} 
+
+.destination-wrapper-inner {
+   display: flex;
+   flex-direction: column;
+   margin-top: 64px;
+}

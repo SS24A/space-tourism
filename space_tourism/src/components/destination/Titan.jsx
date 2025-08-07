@@ -2,7 +2,7 @@ import titanImage from '../../assets/destination/image-titan.webp'
 
 export default function Titan() {
     return (
-        <div>
+        <>
             <div>
                 <img src={titanImage} alt="titan" />
             </div>
@@ -25,6 +25,6 @@ export default function Titan() {
                     </span>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

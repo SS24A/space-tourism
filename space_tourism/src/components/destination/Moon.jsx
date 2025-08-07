@@ -2,7 +2,7 @@ import moonImage from '../../assets/destination/image-moon.webp'
 
 export default function Moon() {
     return (
-        <div>
+        <>
             <div>
                 <img src={moonImage} alt="moon" />
             </div>
@@ -25,6 +25,6 @@ export default function Moon() {
                     </span>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

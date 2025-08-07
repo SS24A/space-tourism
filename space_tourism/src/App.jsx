@@ -1,4 +1,5 @@
 import './App.css'
+import './css/header.css'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
@@ -20,12 +21,9 @@ import Vehicle from './components/technology/Vehicle'
 import Spaceport from './components/technology/Spaceport'
 import Capsule from './components/technology/Capsule'
 
-import Header from './components/Header'
-
 function Root() {
     return (
         <>
-            <Header />
             <Outlet />
         </>
     )

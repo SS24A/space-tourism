@@ -2,7 +2,7 @@ import marsImage from '../../assets/destination/image-mars.webp'
 
 export default function Mars() {
     return (
-        <div>
+        <>
             <div>
                 <img src={marsImage} alt="mars" />
             </div>
@@ -24,6 +24,6 @@ export default function Mars() {
                     </span>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

@@ -2,7 +2,7 @@ import europaImage from '../../assets/destination/image-europa.webp'
 
 export default function Europa() {
     return (
-        <div>
+        <>
             <div>
                 <img src={europaImage} alt="europa" />
             </div>
@@ -25,6 +25,6 @@ export default function Europa() {
                     </span>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
