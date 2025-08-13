@@ -6,29 +6,45 @@ html,
 body {
     font-weight: 400;
     font-family: "Barlow", sans-serif;
-    /* font-family: "Bellefair", serif; */
 }
 
-/* .container {
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.page-title {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    text-transform: uppercase;
 }
 
-@media (max-width: 991px) {
-    .container {
-        max-width: 735px;
-    }
+.page-title span:first-child {
+    opacity: 25%;
+    font-weight: 700;
+    margin-right: 24px;
+    /*28px for destination page only*/
 }
 
-@media (max-width: 767px) {
-    .container {
-        max-width: 570px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-} */
+.page-title span:nth-child(2) {
+    font-weight: 400;
+}
 
+.page-content p {
+    font-size: 18px;
+    line-height: 32px;
+    font-family: "Barlow", sans-serif;
+    color: #D0D6F9;
+    max-width: 444px;
+}
 
+.page-content h1 {
+    font-family: "Bellefair", serif; 
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.page-img {
+    display: flex;
+}
+
+.page-img img {
+    max-width: 100%;
+ }

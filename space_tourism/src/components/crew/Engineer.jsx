@@ -2,8 +2,8 @@ import engineerImage from '../../assets/crew/image-anousheh-ansari.webp'
 
 export default function Engineer() {
     return (
-        <div>
-            <div>
+        <>
+            <div className="page-content">
                 <h3>Flight Engineer</h3>
                 <h1>Anousheh Ansari</h1>
                 <p>
@@ -13,9 +13,9 @@ export default function Engineer() {
                     fly to the ISS, and the first Iranian in space.
                 </p>
             </div>
-            <div>
+            <div className="page-img engineer-img">
                 <img src={engineerImage} alt="engineer" />
             </div>
-        </div>
+        </>
     )
 }

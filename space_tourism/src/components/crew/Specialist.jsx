@@ -2,8 +2,8 @@ import specialistImage from '../../assets/crew/image-mark-shuttleworth.webp'
 
 export default function Specialist() {
     return (
-        <div>
-            <div>
+        <>
+            <div className="page-content">
                 <h3>Mission Specialist</h3>
                 <h1>Mark Shuttleworth</h1>
                 <p>
@@ -13,9 +13,9 @@ export default function Specialist() {
                     African to travel to space as a space tourist.
                 </p>
             </div>
-            <div>
+            <div className="page-img specialist-img">
                 <img src={specialistImage} alt="specialist" />
             </div>
-        </div>
+        </>
     )
 }

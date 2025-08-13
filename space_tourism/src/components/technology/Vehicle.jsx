@@ -2,8 +2,8 @@ import vehicleImage from '../../assets/technology/image-launch-vehicle-portrait.
 
 export default function Vehicle() {
     return (
-        <div>
-            <div>
+        <>
+            <div className="page-content">
                 <h3>The terminology...</h3>
                 <h1>Launch vehicle</h1>
                 <p>
@@ -15,9 +15,9 @@ export default function Vehicle() {
                     pad!
                 </p>
             </div>
-            <div>
+            <div className="page-img">
                 <img src={vehicleImage} alt="vehicle" />
             </div>
-        </div>
+        </>
     )
 }

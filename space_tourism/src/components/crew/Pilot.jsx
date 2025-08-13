@@ -2,8 +2,8 @@ import pilotImage from '../../assets/crew/image-victor-glover.webp'
 
 export default function Pilot() {
     return (
-        <div>
-            <div>
+        <>
+            <div className="page-content">
                 <h3>Pilot</h3>
                 <h1>Victor Glover</h1>
                 <p>
@@ -14,9 +14,9 @@ export default function Pilot() {
                     systems flight engineer.
                 </p>
             </div>
-            <div>
+            <div className="page-img pilot-img">
                 <img src={pilotImage} alt="pilot" />
             </div>
-        </div>
+        </>
     )
 }

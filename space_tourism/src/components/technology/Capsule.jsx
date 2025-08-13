@@ -2,8 +2,8 @@ import capsuleImage from '../../assets/technology/image-space-capsule-portrait.j
 
 export default function Capsule() {
     return (
-        <div>
-            <div>
+        <>
+            <div className="page-content">
                 <h3>The terminology...</h3>
                 <h1>Space capsule</h1>
                 <p>
@@ -14,9 +14,9 @@ export default function Capsule() {
                     plenty of other activities to keep you entertained.
                 </p>
             </div>
-            <div>
+            <div className="page-img">
                 <img src={capsuleImage} alt="capsule" />
             </div>
-        </div>
+        </>
     )
 }

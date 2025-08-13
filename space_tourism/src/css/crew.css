@@ -1,6 +1,6 @@
 .crew-page {
     background-image: url("../assets/crew/background-crew-desktop.jpg");
-    background-size:cover;
+    background-size: cover;
 }
 
 @media (max-width: 991px) {
@@ -13,4 +13,112 @@
     .crew-page {
         background-image: url("../assets/crew/background-crew-mobile.jpg");
     }
+}
+
+.crew-wrapper {
+    padding-left: 75px;
+    /* */
+    margin: auto;
+    padding-top: 76px;
+    color: #ffffff;
+}
+
+.crew-wrapper .commander {
+    max-width: 1172px;
+}
+.crew-wrapper .specialist {
+    max-width: 1163px;
+}
+.crew-wrapper .pilot {
+    max-width: 1218px;
+}
+.crew-wrapper .engineer {
+    max-width: 1260px;
+}
+
+.selected-crew-member {
+    display: flex;
+    height: 640px;
+}
+
+.selected-crew-member .page-img {
+    margin-bottom: -15px;
+}
+
+.selected-crew-member .page-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.crew-wrapper-inner h3 {
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 50.42%;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 154px;
+}
+
+.crew-wrapper-inner h1 {
+    font-size: 56px;
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.crew-page-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 24px;
+    position: relative;
+    bottom: 34px;
+    margin: 0;
+}
+
+.crew-page-nav li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.member-active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.member-idle {
+    background-color: rgba(255, 255, 255, 0.1744);
+}
+
+.member-idle:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.crew-page-nav a {
+    flex-basis: 100%;
+}
+
+.commander-img {
+    margin-top: -46px;
+    margin-left: 81px;
+    width: 528px;
+}
+
+.specialist-img {
+    margin-left: 21px;
+    width: 453px;
+}
+
+.pilot-img {
+    margin-left: 145px;
+    width: 554px;
+}
+
+.engineer-img {
+    margin-top: 48px;
+    margin-left: 38px;
+    width: 615px;
 }

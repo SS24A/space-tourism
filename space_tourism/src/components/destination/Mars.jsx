@@ -3,17 +3,17 @@ import marsImage from '../../assets/destination/image-mars.webp'
 export default function Mars() {
     return (
         <>
-            <div>
+            <div className="page-img">
                 <img src={marsImage} alt="mars" />
             </div>
-            <div>
+            <div className="page-content">
                 <h1>Mars</h1>
-                <p>
+                <p className="destination-info">
                     Don’t forget to pack your hiking boots. You’ll need them to
                     tackle Olympus Mons, the tallest planetary mountain in our
                     solar system. It’s two and a half times the size of Everest!
                 </p>
-                <div>
+                <div className="destination-details">
                     <span>
                         <p>Avg. distance</p>
                         <p>225 mil. km</p>

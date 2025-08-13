@@ -7,7 +7,7 @@ export default function HomePage() {
             <Header />
 
             <div className="home-wrapper">
-                <div>
+                <div className="home-intro">
                     <h3>So, you want to travel to</h3>
                     <h1>Space</h1>
                     <p>
@@ -17,7 +17,7 @@ export default function HomePage() {
                         we’ll give you a truly out of this world experience!
                     </p>
                 </div>
-                <div>
+                <div className="home-explore">
                     <span>Explore</span>
                 </div>
             </div>

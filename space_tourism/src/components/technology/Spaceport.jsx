@@ -2,8 +2,8 @@ import spaceportImage from '../../assets/technology/image-spaceport-portrait.jpg
 
 export default function Spaceport() {
     return (
-        <div>
-            <div>
+        <>
+            <div className="page-content">
                 <h3>The terminology...</h3>
                 <h1>Spaceport</h1>
                 <p>
@@ -14,9 +14,9 @@ export default function Spaceport() {
                     Earth’s rotation for launch.
                 </p>
             </div>
-            <div>
+            <div className="page-img">
                 <img src={spaceportImage} alt="spaceport" />
             </div>
-        </div>
+        </>
     )
 }
