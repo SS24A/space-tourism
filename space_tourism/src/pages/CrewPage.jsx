@@ -9,7 +9,7 @@ export default function CrewPage() {
 
     return (
         <div className="crew-page">
-            <Header />
+            <Header selectedPage={'crew'} />
 
             <section className={`crew-wrapper ${selectedCrewMember}`}>
                 <div className="page-title">

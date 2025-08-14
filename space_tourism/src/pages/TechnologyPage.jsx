@@ -9,7 +9,7 @@ export default function TechnologyPage() {
 
     return (
         <div className="technology-page">
-            <Header />
+            <Header selectedPage={'technology'} />
 
             <section className="technology-wrapper">
                 <div className="page-title">
@@ -49,7 +49,9 @@ export default function TechnologyPage() {
                             <Link to="/technology/capsule">3</Link>
                         </li>
                     </ul>
-                    <div className="selected-technology">
+                    <div
+                        className={`selected-technology ${selectedTechnology}`}
+                    >
                         <Outlet />
                     </div>
                 </div>

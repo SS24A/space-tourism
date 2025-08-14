@@ -9,7 +9,7 @@ export default function DestinationPage() {
 
     return (
         <div className="destination-page">
-            <Header />
+            <Header selectedPage={'destination'} />
 
             <section className="destination-wrapper">
                 <div className="page-title">

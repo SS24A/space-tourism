@@ -4,7 +4,7 @@ import '../css/home.css'
 export default function HomePage() {
     return (
         <div className="home-page">
-            <Header />
+            <Header selectedPage={'home'} />
 
             <div className="home-wrapper">
                 <div className="home-intro">

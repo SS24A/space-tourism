@@ -7,6 +7,15 @@
     .technology-page {
         background-image: url("../assets/technology/background-technology-tablet.jpg");
     }
+    .vehicle .page-img {
+        content:url("../assets/technology/image-launch-vehicle-landscape.jpg")
+    }
+    .capsule .page-img {
+        content:url("../assets/technology/image-space-capsule-landscape.jpg")
+    }
+    .spaceport .page-img {
+        content:url("../assets/technology/image-spaceport-landscape.jpg")
+    }
 }
 
 @media (max-width: 767px) {
