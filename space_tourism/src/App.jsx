@@ -1,6 +1,7 @@
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
+
 import './App.css'
 import './css/header.css'
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 
 import HomePage from './pages/HomePage'
 import DestinationPage from './pages/DestinationPage'
@@ -22,11 +23,7 @@ import Spaceport from './components/technology/Spaceport'
 import Capsule from './components/technology/Capsule'
 
 function Root() {
-    return (
-        <>
-            <Outlet />
-        </>
-    )
+    return <Outlet />
 }
 
 const router = createBrowserRouter([

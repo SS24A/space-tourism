@@ -72,16 +72,6 @@
 .destination-active {
     display: inline;
     margin-left: 35px;
-    padding-bottom: 12px;
-    border-bottom: 3px solid transparent;
-}
-
-.destination-idle:hover {
-    border-bottom: 3px solid #FFFFFF7F;
-}
-
-.destination-active {
-    border-bottom: 3px solid #FFFFFF !important;
 }
 
 .destination-idle:first-child,
@@ -95,7 +85,18 @@
     font-family: "Barlow Condensed", sans-serif;
     color: #D0D6F9;
     letter-spacing: 2.7px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid transparent;
 }
+
+.destination-idle:hover a {
+    border-bottom: 3px solid #FFFFFF7F;
+}
+
+.destination-active a {
+    border-bottom: 3px solid #FFFFFF !important;
+}
+
 
 /* NAVIGATION */
 
