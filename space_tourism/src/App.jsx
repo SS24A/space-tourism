@@ -22,14 +22,10 @@ import Vehicle from './components/technology/Vehicle'
 import Spaceport from './components/technology/Spaceport'
 import Capsule from './components/technology/Capsule'
 
-function Root() {
-    return <Outlet />
-}
-
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Root />,
+        element: <Outlet />,
         children: [
             { path: '/', element: <HomePage /> },
             {
@@ -67,8 +63,19 @@ const router = createBrowserRouter([
             {
                 path: '*',
                 element: (
-                    <div>
-                        404 Not Found <a href="/">Back</a>
+                    <div
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            height: '100vh',
+                            flexDirection: 'column',
+                        }}
+                    >
+                        <h1>404 Not Found</h1>
+                        <a href="/" style={{ textDecoration: 'none' }}>
+                            Go Back
+                        </a>
                     </div>
                 ),
             },

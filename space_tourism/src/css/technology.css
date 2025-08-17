@@ -7,14 +7,17 @@
     .technology-page {
         background-image: url("../assets/technology/background-technology-tablet.jpg");
     }
+
     .vehicle .page-img {
-        content:url("../assets/technology/image-launch-vehicle-landscape.jpg")
+        content: url("../assets/technology/image-launch-vehicle-landscape.jpg")
     }
+
     .capsule .page-img {
-        content:url("../assets/technology/image-space-capsule-landscape.jpg")
+        content: url("../assets/technology/image-space-capsule-landscape.jpg")
     }
+
     .spaceport .page-img {
-        content:url("../assets/technology/image-spaceport-landscape.jpg")
+        content: url("../assets/technology/image-spaceport-landscape.jpg")
     }
 }
 
@@ -88,8 +91,8 @@
     text-align: center;
     font-family: "Bellefair", serif;
     font-size: 32px;
-    color:#FFFFFF;
-    display:flex;
+    color: #FFFFFF;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -109,3 +112,88 @@
 .technology-idle:hover {
     border: 1px solid #FFFFFF;
 }
+
+@media (max-width: 1200px) {
+    .technology-wrapper-inner {
+        gap: 50px;
+    }
+
+    .selected-technology .page-content {
+        padding-top: 70px;
+        padding-right: 30px;
+    }
+
+    .selected-technology .page-img img {
+        object-fit: cover;
+    }
+
+    .technology-page-nav {
+        padding-top: 70px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .technology-wrapper {
+        padding-top: 40px;
+        padding-bottom: 97px;
+        margin: auto;
+        max-width: 768px;
+        padding-left: 0;
+    }
+
+    .technology-wrapper-inner {
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 60px;
+    }
+
+    .technology-wrapper .page-title {
+        margin-left: 38px;
+    }
+
+    .selected-technology {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 160px;
+        text-align: center;
+    }
+
+    .selected-technology .page-content {
+        padding: 0;
+    }
+
+    .selected-technology .page-content p {
+        max-width: 458px;
+    }
+
+    .technology-wrapper-inner h1 {
+        font-size: 40px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+
+    .technology-page-nav {
+        padding: 0;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        position: relative;
+        top: 426px;
+    }
+
+    .technology-page-nav li {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 0;
+    }
+
+    .technology-page-nav a {
+        font-size: 24px;
+    }
+
+}
+
+
+@media (max-width: 767px) {}

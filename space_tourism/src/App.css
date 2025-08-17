@@ -20,7 +20,6 @@ body {
     opacity: 25%;
     font-weight: 700;
     margin-right: 24px;
-    /*28px for destination page only*/
 }
 
 .page-title span:nth-child(2) {
@@ -36,7 +35,7 @@ body {
 }
 
 .page-content h1 {
-    font-family: "Bellefair", serif; 
+    font-family: "Bellefair", serif;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -47,4 +46,36 @@ body {
 
 .page-img img {
     max-width: 100%;
- }
+}
+
+
+
+@media (max-width: 991px) {
+    .page-title {
+        letter-spacing: 3.38px;
+        font-size: 20px;
+    }
+
+    .page-title span:first-child {
+        margin-right: 16px;
+    }
+
+    .page-content p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-title {
+        letter-spacing: 2.7px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .page-content p {
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 327px !important;
+    }
+}
