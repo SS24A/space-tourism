@@ -26,6 +26,7 @@
 @media (max-width: 767px) {
     .technology-page {
         background-image: url("../assets/technology/background-technology-mobile.jpg");
+        height: 100vh;
     }
 }
 

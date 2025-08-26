@@ -12,6 +12,7 @@
 @media (max-width: 767px) {
     .destination-page {
         background-image: url("../assets/destination/background-destination-mobile.jpg");
+        height: 100vh;
     }
 }
 

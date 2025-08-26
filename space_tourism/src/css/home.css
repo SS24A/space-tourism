@@ -12,6 +12,7 @@
 @media (max-width: 767px) {
     .home-page {
         background-image: url("../assets/home/background-home-mobile.jpg");
+        height: 100vh;
     }
 }
 
