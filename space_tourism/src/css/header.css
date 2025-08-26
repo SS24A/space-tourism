@@ -16,7 +16,7 @@
 }
 
 .header div:empty {
-    flex: 1 0 473px;
+    flex: 0 1 473px;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.25);
     margin-right: -30px;
@@ -67,4 +67,121 @@
 
 .header-nav a span:nth-child(2) {
     font-weight: 400;
+}
+
+.header-menu-mobile {
+    display: none;
+}
+
+.header-nav img {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .header-nav {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .header div:empty {
+        display: none;
+    }
+
+    .header {
+        padding-left: 39px;
+        padding-top: 0;
+        gap: 231px;
+        justify-content: space-between;
+    }
+
+    .header-nav a span:first-child {
+        display: none;
+    }
+
+    .header-nav {
+        padding-left: 48px;
+        padding-right: 46px;
+        gap: 38px;
+    }
+
+    .header-logo {
+        margin-right: 0;
+    }
+
+    .header-nav a {
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+        gap: 0;
+    }
+
+    .header-logo {
+        width: 40px;
+    }
+
+    .header-nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 254px;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(35px);
+        flex-direction: column;
+        gap: 0;
+        height: 100%;
+        padding: 0;
+        padding-top: 34px;
+        z-index: 1;
+    }
+
+    .header-nav img {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 208px;
+        margin-bottom: 65px;
+    }
+
+    .header-nav li {
+        padding: 0;
+        padding-left: 32px;
+        margin-bottom: 32px;
+    }
+
+    .header-nav a {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .header-nav a span:first-child {
+        margin-right: 0;
+        width: 29px;
+        display: inline-block;
+    }
+
+    .page-active,
+    .page-idle {
+        border-bottom: none;
+    }
+
+    .page-idle:hover {
+        border-bottom: none;
+    }
+
+    .menu-hidden .header-nav {
+        display: none;
+    }
+
+    .menu-hidden .header-menu-mobile {
+        display: flex;
+    }
 }

@@ -1,6 +1,6 @@
 .destination-page {
     background-image: url("../assets/destination/background-destination-desktop.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 @media (max-width: 991px) {
@@ -122,6 +122,10 @@
 }
 
 @media (max-width: 1200px) {
+    .destination-wrapper {
+        padding-right: 30px;
+    }
+
     .destination-wrapper .page-title {
         margin-left: -34px;
     }

@@ -1,6 +1,6 @@
 .home-page {
     background-image: url("../assets/home/background-home-desktop.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 @media (max-width: 991px) {
@@ -81,4 +81,98 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1100px) {
+    .home-explore {
+        width: 400px;
+        height: 400px;
+    }
+
+    .home-explore span {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 991px) {
+    .home-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 106px;
+        padding-bottom: 90px;
+        gap: 156px;
+        align-items: center;
+        max-width: 500px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .home-wrapper h1 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        line-height: 150px;
+    }
+
+    .home-wrapper h3 {
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+
+    .home-wrapper p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+
+    .home-explore {
+        width: 242px;
+        height: 242px;
+        margin-top: 0;
+    }
+
+    .home-explore span {
+        width: 242px;
+        height: 242px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-wrapper {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        gap: 81px;
+        max-width: 347px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .home-wrapper h1 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        line-height: 100px;
+        font-size: 80px;
+    }
+
+    .home-wrapper h3 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .home-wrapper p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .home-explore {
+        width: 150px;
+        height: 150px;
+    }
+
+    .home-explore span {
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+        letter-spacing: 1.25px;
+    }
 }

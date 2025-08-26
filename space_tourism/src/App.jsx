@@ -32,7 +32,7 @@ const router = createBrowserRouter([
                 path: '/destination',
                 element: <DestinationPage />,
                 children: [
-                    { path: '', element: <Moon /> },
+                    { index: true, element: <Moon /> },
                     { path: 'moon', element: <Moon /> },
                     { path: 'mars', element: <Mars /> },
                     { path: 'europa', element: <Europa /> },
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
                 path: '/crew',
                 element: <CrewPage />,
                 children: [
-                    { path: '', element: <Commander /> },
+                    { index: true, element: <Commander /> },
                     { path: 'commander', element: <Commander /> },
                     { path: 'specialist', element: <Specialist /> },
                     { path: 'pilot', element: <Pilot /> },
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
                 path: '/technology',
                 element: <TechnologyPage />,
                 children: [
-                    { path: '', element: <Vehicle /> },
+                    { index: true, element: <Vehicle /> },
                     { path: 'vehicle', element: <Vehicle /> },
                     { path: 'spaceport', element: <Spaceport /> },
                     { path: 'capsule', element: <Capsule /> },

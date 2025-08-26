@@ -1,6 +1,6 @@
 .crew-page {
     background-image: url("../assets/crew/background-crew-desktop.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 @media (max-width: 991px) {
@@ -16,56 +16,40 @@
 }
 
 .crew-wrapper {
-    padding-left: 75px;
-    /* */
-    margin: auto;
     padding-top: 76px;
     color: #ffffff;
-}
-
-.crew-wrapper .commander {
-    max-width: 1172px;
-}
-.crew-wrapper .specialist {
-    max-width: 1163px;
-}
-.crew-wrapper .pilot {
-    max-width: 1218px;
-}
-.crew-wrapper .engineer {
-    max-width: 1260px;
+    padding-left: 11%;
 }
 
 .selected-crew-member {
     display: flex;
     height: 640px;
+    justify-content: space-between;
+    gap: 21px;
 }
 
 .selected-crew-member .page-img {
     margin-bottom: -15px;
-}
-
-.selected-crew-member .page-img img {
-    width: 100%;
-    height: 100%;
+    flex: 0 1 55%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .crew-wrapper-inner h3 {
     font-family: "Bellefair", serif;
     font-size: 32px;
     font-weight: 400;
-    color: #ffffff;
     opacity: 50.42%;
     text-transform: uppercase;
-    margin: 0;
     margin-bottom: 15px;
     margin-top: 154px;
 }
 
 .crew-wrapper-inner h1 {
     font-size: 56px;
-    margin: 0;
+    margin-top: 0;
     margin-bottom: 27px;
+    white-space: nowrap;
 }
 
 .crew-page-nav {
@@ -74,7 +58,7 @@
     display: flex;
     gap: 24px;
     position: relative;
-    bottom: 34px;
+    bottom: 94px;
     margin: 0;
 }
 
@@ -101,24 +85,214 @@
     flex-basis: 100%;
 }
 
-.commander-img {
-    margin-top: -46px;
-    margin-left: 81px;
-    width: 528px;
+.commander-img img {
+    height: 702px;
+    margin-left: 50px;
 }
 
-.specialist-img {
-    margin-left: 21px;
-    width: 453px;
+.specialist-img img,
+.pilot-img img {
+    height: 654px;
 }
 
-.pilot-img {
-    margin-left: 145px;
-    width: 554px;
+.engineer-img img {
+    height: 607px;
 }
 
-.engineer-img {
-    margin-top: 48px;
-    margin-left: 38px;
-    width: 615px;
+@media (max-width: 1260px) {
+    .crew-wrapper {
+        padding-left: 8%;
+    }
+
+    .crew-wrapper-inner h1 {
+        font-size: 48px;
+    }
+
+    .selected-crew-member {
+        gap: 0;
+    }
+
+    .commander-img img {
+        margin-left: 30px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .crew-wrapper {
+        padding-left: 6%;
+    }
+
+    .selected-crew-member {
+        height: 580px;
+    }
+
+    .crew-wrapper-inner h1 {
+        font-size: 46px;
+    }
+
+    .commander-img img {
+        height: 632px;
+    }
+
+    .specialist-img img,
+    .pilot-img img {
+        height: 588px;
+    }
+
+    .engineer-img img {
+        height: 546px;
+    }
+}
+
+@media (max-width: 991px) {
+    .crew-wrapper {
+        padding-top: 40px;
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    .selected-crew-member {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .crew-wrapper-inner h3 {
+        margin-top: 60px;
+        font-size: 24px;
+        opacity: 49.94%;
+        margin-bottom: 8px;
+    }
+
+    .crew-wrapper-inner h1 {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+
+    .crew-wrapper-inner p {
+        margin-bottom: 0;
+    }
+
+    .commander-content p {
+        max-width: 458px;
+    }
+
+    .specialist-content p {
+        max-width: 520px;
+    }
+
+    .pilot-content p {
+        max-width: 592px;
+    }
+
+    .engineer-content p {
+        max-width: 536px;
+    }
+
+    .selected-crew-member .page-img {
+        margin-bottom: -10px;
+    }
+
+    .selected-crew-member .page-img img {
+        height: 532px;
+    }
+
+    .commander-img img {
+        width: 415px;
+        margin-left: 40px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .specialist-img img {
+        margin-left: 15px;
+        width: 353px;
+    }
+
+    .pilot-img img {
+        margin-right: 22px;
+    }
+
+    .engineer-img img {
+        margin-left: 40px;
+    }
+
+    .crew-page-nav {
+        justify-content: center;
+        bottom: 572px;
+        gap: 16px;
+    }
+
+    .crew-page-nav li {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .crew-wrapper {
+        padding: 24px 24px 0 24px;
+    }
+
+    .crew-wrapper-inner {
+        margin-top: 32px;
+    }
+
+    .selected-crew-member {
+        flex-direction: column-reverse;
+        gap: 74px;
+        height: 561px;
+    }
+
+    .crew-wrapper-inner h3 {
+        font-size: 16px;
+        margin-top: 0;
+        opacity: 49.51%;
+    }
+
+    .crew-wrapper-inner h1 {
+        font-size: 24px;
+    }
+
+    .selected-crew-member p {
+        height: 194px;
+    }
+
+    .selected-crew-member .page-img {
+        margin-bottom: 0;
+        width: 327px;
+        height: 223px;
+        justify-content: center;
+        border-bottom: 1px solid #383B4B;
+    }
+
+    .selected-crew-member .page-img img {
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        margin: 0;
+    }
+
+    .commander-img img {
+        width: 177px;
+    }
+
+    .specialist-img img {
+        width: 154px;
+    }
+
+    .pilot-img img {
+        width: 181px;
+    }
+
+    .engineer-img img {
+        width: 226px;
+    }
+
+    .crew-page-nav {
+        bottom: 306px;
+    }
 }
